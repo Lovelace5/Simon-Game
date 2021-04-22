@@ -33,24 +33,24 @@ footer {
 .btn {
   margin: 25px;
   display: inline-block;
-  border-radius: 25%;
+  border-radius: 50%;
   border: solid 10px;
   height: 200px;
   width: 200px;
 }
 
 .green {
-  background-color: green;
+  background-color: #A7FC00;
 }
 
-.yellow {
-  background-color: yellow;
+.magenta {
+  background-color: #FF00FF;
 }
 
 .red {
-  background-color: red;
+  background-color: #E30B5C;
 }
 
 .blue {
-  background-color: blue;
+  background-color: #1E90FF;
 }
