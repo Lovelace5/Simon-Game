@@ -16,3 +16,9 @@ let randomChosenColor = buttonColours[nextSequence()];
 
 $("#" + randomChosenColor).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
 gamePattern.push(randomChosenColor);
+
+let audio = new Audio('sounds/' + randomChosenColor + '.mp3');
+//
+// function playAudio() {
+  audio.play();
+// }
