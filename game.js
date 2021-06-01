@@ -8,6 +8,7 @@ $(".btn").click(function() {
 
   userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
+  $("#" + userChosenColour).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
   playSound(userChosenColour);
 
   });
@@ -15,12 +16,12 @@ $(".btn").click(function() {
 function nextSequence() {
 
   let randomNumber = Math.floor(Math.random() * 4);
-  let randomChosenColor = buttonColours[randomNumber];
+  let randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColor);
 
-  $("#" + randomChosenColor).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+  $("#" + randomChosenColour).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
 
-  playSound(randomChosenColor);
+  playSound(randomChosenColour);
 }
 
 function playSound(name) {
